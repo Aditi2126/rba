@@ -1,0 +1,171 @@
+/* 
+.dashboardPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #FFDAB9 50%, #8B4513 50%); 
+    padding: 20px;
+  }
+  
+  
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #FFFFFF; 
+    margin-bottom: 30px;
+  }
+  
+ 
+  .content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0
+  }  */
+
+
+
+  /* Dashboard container */
+.dashboardContainer {
+    display: flex;
+    height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    width: 250px;
+    background-color: #8b4513; /* Brown color for sidebar */
+    padding: 20px;
+    color: white;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebarLink {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Main content styles */
+  .mainContent {
+    flex-grow: 1;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Account icon */
+  .accountIcon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .accountMenu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .accountMenu:hover .dropdown {
+    display: block;
+  }
+  
+  .logoutButton {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Barista list styles */
+  .baristaList {
+    margin-bottom: 20px;
+  }
+  
+  .baristaItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .editButton, .deleteButton {
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .editButton {
+    background-color: #ffc107; /* Yellow for edit */
+  }
+  
+  .deleteButton {
+    background-color: #dc3545; /* Red for delete */
+    color: white;
+  }
+  
+  .addButton {
+    padding: 10px 15px;
+    background-color: #8b4513; /* Brown button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Form styling */
+  .form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+  }
+  
+  .inputGroup {
+    margin-bottom: 15px;
+  }
+  
+  .inputField {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .submitButton {
+    padding: 10px;
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  

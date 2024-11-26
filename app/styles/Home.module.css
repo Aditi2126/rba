@@ -1,0 +1,129 @@
+/* styles/Home.module.css */
+
+/* Page container with background image */
+.page {
+    background-image: url('/images/background.jpg'); /* Background image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Header for logo and cafe name */
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  /* Logo with bounce animation */
+  .logo {
+    animation: bounce 2s ease-in-out infinite;
+  }
+  
+  /* Cafe Name with Brown and Peach Color Animation */
+  .cafeName {
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(to right, #8B4513, #FFDAB9); /* Brown and peach gradient */
+    -webkit-background-clip: text; /* Clip the background to text */
+    color: transparent; /* Make text itself transparent to show the gradient */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: colorChange 4s ease-in-out infinite; /* Animate between brown and peach */
+  }
+  
+  /* Keyframes for Brown and Peach Color Change */
+  @keyframes colorChange {
+    0% {
+      color: #8B4513; /* Brown */
+    }
+    50% {
+      color: #FFDAB9; /* Peach */
+    }
+    100% {
+      color: #8B4513; /* Brown */
+  }
+  
+  }
+  
+  /* Main content styling with smaller and more attractive text */
+  .main {
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for readability */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center;
+    max-width: 700px; /* Make the main content narrower */
+    width: 100%;
+    font-size: 16px; /* Smaller font size for the main text */
+    line-height: 1.6; /* Better line height for readability */
+  }
+  
+  .main ol {
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+  }
+  
+  .main li {
+    font-size: 14px; /* Slightly smaller for list items */
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Call-to-action buttons section */
+  .ctas {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Add some space between buttons */
+    margin-top: 30px;
+  }
+  
+  .ctas a {
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px; /* Smaller font size for buttons */
+    padding: 12px 20px; /* Attractive padding for better button sizing */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth background and shadow transitions */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for button */
+  }
+  
+  /* Primary button (Admin Login) */
+  .primary {
+    background-color: #8B4513; /* Brown color for admin login */
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .primary:hover {
+    background-color: #6a3710; /* Darker brown on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
+  }
+  
+  /* Secondary button (Barista Login) */
+  .secondary {
+    background-color: #FFDAB9; /* Peach color for barista login */
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .secondary:hover {
+    background-color: #ffcb9e; /* Darker peach on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
+  }
+  
+  /* Footer styling */
+  .footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #FFFFFF;
+  }
+  

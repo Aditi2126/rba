@@ -1,0 +1,122 @@
+
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(
+        rgba(139, 69, 19, 0.7),
+        rgba(255, 218, 185, 0.7)
+      ), 
+      url('/images/coffee-background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Left side: Background image section */
+  .imageSection {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .backgroundImage {
+    max-width: 90%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .backgroundImage:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  /* Right side: Login form section */
+  .loginFormSection {
+    flex: 1;
+    max-width: 400px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #8B4513; /* Brown color */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  /* Form styling */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputField {
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .inputField:focus {
+    outline: none;
+    box-shadow: 0 2px 8px rgba(255, 87, 34, 0.4); /* Orange shadow on focus */
+  }
+  
+  /* Submit button */
+  .submitButton {
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #FF5722; /* Orange background */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .submitButton:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+  }
+  
+  /* Responsive adjustments for small screens */
+  @media (max-width: 768px) {
+    .loginContainer {
+      flex-direction: column;
+    }
+  
+    .backgroundImage {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .loginFormSection {
+      max-width: 100%;
+      padding: 20px;
+    }
+  }
+  
